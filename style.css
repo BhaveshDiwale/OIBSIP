@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    font-family: monospace;
+}
+
+h1{
+    font-size: 40px;
+    color: #2B3499;
+    margin-bottom: 40px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+button{
+    border: none;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFD099;
+    width: 100%;
+    height: 100vh;
+}
+
+#grid-input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    height: 40px;
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 15px;
+    text-align: end;
+    font-size: 30px;
+    color: #2B3499;
+    cursor:text ;
+}
+
+#grid-input:focus{
+    outline: none;
+}
+
+.calculator-grid {
+    display: grid;
+    width: 22%;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    background:#FF9209;
+    padding: 10px;
+    border-radius: 10px;
+    column-gap: 0;
+}
+
+.grid-item{ 
+    width: 70px;
+    height: 60px;
+    margin: 5px;
+    background: #F5E8B7; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;   
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 30px;
+    color: #2B3499;
+}
+
+.calculate{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 90%;
+}
+
+.clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90%;
+}
+
+@media screen and (max-width:1025px) {
+    .calculator-grid{
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .calculator-grid{
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .calculator-grid{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .calculator-grid{
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .calculator-grid{
+        width: 90% !important;
+    }
+
+    .grid-item{
+        width: 62px;
+        height: 55px;
+        margin: 5px;
+        font-size: 24px;
+    }
+
+    .clear, .calculate{
+        width: 90%;
+    }
+}
+

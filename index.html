@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 1 | Calculator</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Calculator</h1>
+        <div class="calculator-grid" >
+            <div id="grid-input"></div>
+            <button class="grid-item clear" onclick="handleClear(this)">Clear</button>
+            <button class="grid-item" onclick="handleBack()">&Cross;</button>
+            <button class="grid-item" onclick="handleclick(this)">/</button>
+            <button class="grid-item" onclick="handleclick(this)">7</button>
+            <button class="grid-item" onclick="handleclick(this)">8</button>
+            <button class="grid-item" onclick="handleclick(this)">9</button>
+            <button class="grid-item" onclick="handleclick(this)">*</button>
+            <button class="grid-item" onclick="handleclick(this)">4</button>
+            <button class="grid-item" onclick="handleclick(this)">5</button>
+            <button class="grid-item" onclick="handleclick(this)">6</button>
+            <button class="grid-item" onclick="handleclick(this)">-</button>
+            <button class="grid-item" onclick="handleclick(this)">1</button>
+            <button class="grid-item" onclick="handleclick(this)">2</button>
+            <button class="grid-item" onclick="handleclick(this)">3</button>
+            <button class="grid-item" onclick="handleclick(this)">+</button>
+            <button class="grid-item" onclick="handleclick(this)">0</button>
+            <button class="grid-item" onclick="handleclick(this)">.</button>
+            <button class="grid-item calculate" onclick="handleCalculate(this)" onkeydown="handleKeyPress(this)">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
